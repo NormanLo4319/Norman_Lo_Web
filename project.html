@@ -43,11 +43,11 @@
     <div class="container-xl clearfix px-3 mt-4">
         <div class="card-content col-4 float-left pr-6", style="width:300px">
             <a>
-                <img alt width="230" height="260" class="width-full height-full"
-                    src="static/image/profile.jpg">
+                <img alt width="230" height="260" class="width-full height-full" src="static/image/profile.jpg">
             </a>
             <h3>Norman Lo</h3>
-            <h5>Research & Data Analyst</h5>
+            <h5>Economist / Data Scientist</h5>
+            <h5>Adjunct College Instructor</h5>
             <h5>
                 <svg class="octicon octicon-location" viewBox="0 0 12 16" version="1.1" width="12" height="16" aria-hidden="true">
                     <path fill-rule="evenodd" d="M6 0C2.69 0 0 2.5 0 5.5 0 10.02 6 16 6 16s6-5.98 6-10.5C12 2.5 9.31 0 6 0zm0 14.55C4.14 12.52 1 8.44 1 5.5 1 3.02 3.25 1 6 1c1.34 0 2.61.48 3.56 1.36.92.86 1.44 1.97 1.44 3.14 0 2.94-3.14 7.02-5 9.05zM8 5.5c0 1.11-.89 2-2 2-1.11 0-2-.89-2-2 0-1.11.89-2 2-2 1.11 0 2 .89 2 2z"></path>
@@ -58,27 +58,57 @@
         </div>
         <div class="col-12 col-md-8 float-left pl-2">
             <div class="box">
-                <h1>Project Summary</h1>
+                <h1>Projects Summary</h1>
                 
+                <h2>World Happiness Scores & Gini Coefficient</h2>
+                <h4>Summary</h4>
+                <p>In this project, we are trying to create a data product that demonstrates the correlation between 
+                    <a href="https://worldhappiness.report/">World Happiness Scores</a> and 
+                    <a href="https://data.worldbank.org/indicator/SI.POV.GINI?view=map">Gini Coefficient</a>. 
+                    The data product will have the back end database for API call, which is hosted by Heroku, and the front end dash board to present the visualization and analysis result.
+                    We found statistically significant correlation between the World Happiness Socres and Gini Coefficient in this project, which suggests countries with more equal income distribution has a significant attribution to its Happiness Scores.
+                </p>
+                <p><a href="https://world-happiness-database.herokuapp.com">Back End API Web Page</a></p>
+                <p><a href="https://github.com/NormanLo4319/World_Happiness_Database_API">GitHub Link for Back End Script</a></p>
+                <p><a href="https://github.com/NormanLo4319/World_Happiness_Dashboard">GitHub Link for Front End Script</a></p>
+                <img alt width="800" height="350" class="width-full height-full mb-5" src="static/image/Dashboard.png">
+                <hr>
+
                 <h2>SF Restaurants Public Health Score Vs. Yelp Consumer-Based Rating</h2>
                 <h4>Summary</h4>
-                <p>""</p>
-                <a href="">Project Link</a>
+                <p>How much you know about your favorite restaurant in San Francisco?  In this project, we are tyring to compare Yelp customer-based rating and SF public restaurants scores (cleaness).  
+                    The project is based on ETL workflow., which involves EXTRACTING, TRANSFORMING, and LOADING data. 
+                    We first made the API query from <a href="https://www.yelp.com/developers">Yelp</a> and received 4,050 restaurant rating scores and stored in the SQL database.  We then downloaded the public restaurant scores from 
+                    <a href="https://www.sfdph.org/dph/EH/Food/Score/default.asp">San Francisco Department of Public Health</a> and stored in the SQL database. Once the database is created, we used Pythong SQLAlchemy library to merge the two relational data. 
+                    We used Python Plotly library to create visualization of the data. According to the result, we do not find any strong evidence suggest the correlation bewteen customer-based rating and restaurant scores. 
+                </p>
+                <p><a href="https://github.com/NormanLo4319/Restaurant-Health-Score-vs.-Yelp-Customer-Based-Scores-ETL-Project">GitHub Project Link</a></p>
+                <img alt width="450" height="300" class="width-full height-full mb-5" src="static/image/inspection_scores_vs_yelp_rating.png">
+                <hr>
 
                 <h2>US Food Environment & Health Outcomes</h2>
                 <h4>Summary</h4>
-                <p>""</p>
-                <a href="">Project Link</a>
+                <p>The main objective of this project is to examining the relationship between the food environment and health outcome (obesity & diabetes) at country level. 
+                    This project is inspired by the paper <q>Examining the relationship between the food environment and adult diabetes prevalence by county economic and racial composition: 
+                    an ecological study</q> (Haynes-Maslow & Leone, Aug 09, 2017), (https://www.ncbi.nlm.nih.gov/pmc/articles/Pmc5551001).</p>
+                <p><a href="https://github.com/NormanLo4319/Food-Enviroment-Project">GitHub Project Link</a></p>
+                <img alt width="450" height="300" class="width-full height-full mb-5" src="static/image/Obes_Diab_Rate_Ranked.png">
+                <hr>
 
                 <h2>Informational Policy Relates to Consumers' Food Choice</h2>
                 <h4>Summary</h4>
-                <p>""</p>
-                <a href="">Project Link (Not Available Yet)</a>
-
-                <h2>Evaluation of Students' Academic Performance</h2>
+                <p>This paper investigates how informational policy (especially nutrition label) could help improve consumers choice on healthier food purchase. 
+                    The statistical analysis is mainly performed on Stata and R. Both multivariate linear regression and logic regression models were applied to this paper.
+                    Not only we found a strong correlation on reading nutrition label and health outcome, we also found statiscal significant evidence on how education attainment will affect the effectiveness use of nutrition label. 
+                    The study extended to find the effectiveness of nutrition lable to different ethicity groups.
+                </p>
+                <p><a href="static/file/Informational_Policy_Improve_Consumers'_Food_Choice.pdf">Download the Paper Here!</a></p>
+                <p><a href="static/file/Informational Policy Improves Consumers’ Choice for Healthier.pptx">Download the Presenation PPT Here!</a></p>
+                <hr>
+                <!-- <h2>Evaluation of Students' Academic Performance</h2>
                 <h4>Summary</h4>
                 <p>""</p>
-                <a href="">Project Link (Not Availalbe Yet)</a>
+                <a href="">Project Link (Not Availalbe Yet)</a> -->
 
             </div>
         </div>
@@ -89,8 +119,10 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <footer>
-        <div class="footer">Copyright &copy; 2019</div>
+    <footer class="footer py-4">
+        <div class="container-xl px-5">
+            <span>Copyright &copy; 2019</span>
+        </div>
     </footer>
 </body>
 </html>
