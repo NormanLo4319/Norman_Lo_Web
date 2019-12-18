@@ -1,3 +1,3 @@
 # Norman_Lo_Web
 Personal Web Page
-[images/page.png]
+![page image](images/page.png)
