@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Norman Lo</title>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Norman's Profile</a>
+            
+            <button class="navbar-toggler border" type="button" 
+            data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" 
+            aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href=work.html class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=project.html class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=teach.html class="nav-link">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=contact.html class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>FIPS Codes</th>
+            <th>Survey Diabetes</th>
+            <th>Percent Diabetes</th>
+            <th>Age-Adjusted Percent Diabetes</th>
+            <th>Survey Obesity</th>
+            <th>Percent Obesity</th>
+            <th>Age-Adjusted Percent Obesity</th>
+            <th>County_Name</th>
+            <th>State_Name</th>
+            <th>lat</th>
+            <th>lng</th>
+            <th>Zip_Code</th>
+            <th>Population</th>
+            <th>fast_food</th>
+            <th>pop_ff_ratio</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>1001</td>
+            <td>5144</td>
+            <td>13.0</td>
+            <td>11.9</td>
+            <td>13513</td>
+            <td>34.1</td>
+            <td>33.8</td>
+            <td>Autauga</td>
+            <td>Alabama</td>
+            <td>32.4321</td>
+            <td>-86.6582</td>
+            <td>36003</td>
+            <td>54695</td>
+            <td>41</td>
+            <td>1334.024390</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>1003</td>
+            <td>15367</td>
+            <td>10.4</td>
+            <td>8.8</td>
+            <td>40365</td>
+            <td>27.4</td>
+            <td>27.2</td>
+            <td>Baldwin</td>
+            <td>Alabama</td>
+            <td>30.3555</td>
+            <td>-87.5041</td>
+            <td>36530</td>
+            <td>194736</td>
+            <td>180</td>
+            <td>1081.866667</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>1007</td>
+            <td>2557</td>
+            <td>14.8</td>
+            <td>13.8</td>
+            <td>6940</td>
+            <td>40.3</td>
+            <td>40.3</td>
+            <td>Bibb</td>
+            <td>Alabama</td>
+            <td>33.1468</td>
+            <td>-87.0030</td>
+            <td>35115</td>
+            <td>22503</td>
+            <td>268</td>
+            <td>83.966418</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>1009</td>
+            <td>5990</td>
+            <td>14.1</td>
+            <td>12.3</td>
+            <td>14768</td>
+            <td>34.6</td>
+            <td>34.9</td>
+            <td>Blount</td>
+            <td>Alabama</td>
+            <td>33.9064</td>
+            <td>-86.5178</td>
+            <td>35013 35121</td>
+            <td>57623</td>
+            <td>122</td>
+            <td>472.319672</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>1011</td>
+            <td>1588</td>
+            <td>19.6</td>
+            <td>18.1</td>
+            <td>3482</td>
+            <td>43.0</td>
+            <td>42.8</td>
+            <td>Bullock</td>
+            <td>Alabama</td>
+            <td>32.1395</td>
+            <td>-85.7141</td>
+            <td>36089</td>
+            <td>10549</td>
+            <td>6</td>
+            <td>1758.166667</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>1013</td>
+            <td>2676</td>
+            <td>17.7</td>
+            <td>15.4</td>
+            <td>5481</td>
+            <td>36.3</td>
+            <td>36.6</td>
+            <td>Butler</td>
+            <td>Alabama</td>
+            <td>31.5566</td>
+            <td>-86.8233</td>
+            <td>36456</td>
+            <td>20372</td>
+            <td>25</td>
+            <td>814.880000</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>1015</td>
+            <td>13000</td>
+            <td>14.9</td>
+            <td>13.4</td>
+            <td>28209</td>
+            <td>32.2</td>
+            <td>32.2</td>
+            <td>Calhoun</td>
+            <td>Alabama</td>
+            <td>33.7602</td>
+            <td>-85.8117</td>
+            <td>36277</td>
+            <td>116482</td>
+            <td>112</td>
+            <td>1040.017857</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>1019</td>
+            <td>2685</td>
+            <td>13.3</td>
+            <td>10.7</td>
+            <td>6771</td>
+            <td>33.6</td>
+            <td>33.9</td>
+            <td>Cherokee</td>
+            <td>Alabama</td>
+            <td>34.2215</td>
+            <td>-85.5887</td>
+            <td>35959</td>
+            <td>26014</td>
+            <td>44</td>
+            <td>591.227273</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>1021</td>
+            <td>4299</td>
+            <td>13.3</td>
+            <td>12.0</td>
+            <td>11580</td>
+            <td>35.9</td>
+            <td>36.0</td>
+            <td>Chilton</td>
+            <td>Alabama</td>
+            <td>32.9169</td>
+            <td>-86.7202</td>
+            <td>35171</td>
+            <td>43645</td>
+            <td>55</td>
+            <td>793.545455</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>1027</td>
+            <td>1503</td>
+            <td>14.6</td>
+            <td>12.2</td>
+            <td>3841</td>
+            <td>37.3</td>
+            <td>37.7</td>
+            <td>Clay</td>
+            <td>Alabama</td>
+            <td>33.1213</td>
+            <td>-86.1290</td>
+            <td>35072</td>
+            <td>13406</td>
+            <td>35</td>
+            <td>383.028571</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>1029</td>
+            <td>1421</td>
+            <td>12.6</td>
+            <td>10.7</td>
+            <td>3379</td>
+            <td>30.0</td>
+            <td>30.2</td>
+            <td>Cleburne</td>
+            <td>Alabama</td>
+            <td>33.6471</td>
+            <td>-85.5698</td>
+            <td>36264</td>
+            <td>14976</td>
+            <td>63</td>
+            <td>237.714286</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>1031</td>
+            <td>5998</td>
+            <td>15.9</td>
+            <td>14.4</td>
+            <td>12725</td>
+            <td>33.7</td>
+            <td>33.7</td>
+            <td>Coffee</td>
+            <td>Alabama</td>
+            <td>31.3784</td>
+            <td>-85.9228</td>
+            <td>36351</td>
+            <td>50647</td>
+            <td>49</td>
+            <td>1033.612245</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>1033</td>
+            <td>7736</td>
+            <td>18.7</td>
+            <td>16.1</td>
+            <td>15526</td>
+            <td>37.5</td>
+            <td>37.8</td>
+            <td>Colbert</td>
+            <td>Alabama</td>
+            <td>34.5951</td>
+            <td>-87.6719</td>
+            <td>35674 35654</td>
+            <td>54528</td>
+            <td>75</td>
+            <td>727.040000</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>1035</td>
+            <td>1700</td>
+            <td>17.4</td>
+            <td>14.4</td>
+            <td>3558</td>
+            <td>36.4</td>
+            <td>36.7</td>
+            <td>Conecuh</td>
+            <td>Alabama</td>
+            <td>31.3127</td>
+            <td>-87.2355</td>
+            <td>36475</td>
+            <td>12908</td>
+            <td>26</td>
+            <td>496.461538</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>1037</td>
+            <td>1516</td>
+            <td>17.3</td>
+            <td>14.6</td>
+            <td>3474</td>
+            <td>39.7</td>
+            <td>39.8</td>
+            <td>Coosa</td>
+            <td>Alabama</td>
+            <td>32.8746</td>
+            <td>-86.1159</td>
+            <td>35010 35089</td>
+            <td>11253</td>
+            <td>20</td>
+            <td>562.650000</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>1041</td>
+            <td>1716</td>
+            <td>16.5</td>
+            <td>14.2</td>
+            <td>4136</td>
+            <td>39.7</td>
+            <td>40.1</td>
+            <td>Crenshaw</td>
+            <td>Alabama</td>
+            <td>31.5823</td>
+            <td>-86.2569</td>
+            <td>36009</td>
+            <td>13847</td>
+            <td>20</td>
+            <td>692.350000</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>1043</td>
+            <td>8773</td>
+            <td>14.4</td>
+            <td>12.6</td>
+            <td>20319</td>
+            <td>33.4</td>
+            <td>33.7</td>
+            <td>Cullman</td>
+            <td>Alabama</td>
+            <td>34.2401</td>
+            <td>-86.9625</td>
+            <td>35057 35179</td>
+            <td>80674</td>
+            <td>76</td>
+            <td>1061.500000</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>1045</td>
+            <td>5209</td>
+            <td>14.1</td>
+            <td>13.0</td>
+            <td>13467</td>
+            <td>36.5</td>
+            <td>36.6</td>
+            <td>Dale</td>
+            <td>Alabama</td>
+            <td>31.4508</td>
+            <td>-85.6473</td>
+            <td>36360 36361</td>
+            <td>49759</td>
+            <td>115</td>
+            <td>432.686957</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>1049</td>
+            <td>6911</td>
+            <td>13.4</td>
+            <td>12.0</td>
+            <td>15728</td>
+            <td>30.4</td>
+            <td>30.5</td>
+            <td>DeKalb</td>
+            <td>Alabama</td>
+            <td>34.4496</td>
+            <td>-85.9050</td>
+            <td>35971</td>
+            <td>70905</td>
+            <td>66</td>
+            <td>1074.318182</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>1051</td>
+            <td>8029</td>
+            <td>13.4</td>
+            <td>12.5</td>
+            <td>21240</td>
+            <td>35.4</td>
+            <td>35.2</td>
+            <td>Elmore</td>
+            <td>Alabama</td>
+            <td>32.6390</td>
+            <td>-86.0383</td>
+            <td>36024</td>
+            <td>80555</td>
+            <td>140</td>
+            <td>575.392857</td>
+          </tr>
+          <tr>
+            <th>20</th>
+            <td>1053</td>
+            <td>5095</td>
+            <td>17.8</td>
+            <td>16.1</td>
+            <td>10798</td>
+            <td>37.7</td>
+            <td>37.8</td>
+            <td>Escambia</td>
+            <td>Alabama</td>
+            <td>31.2202</td>
+            <td>-87.4619</td>
+            <td>36543</td>
+            <td>37773</td>
+            <td>20</td>
+            <td>1888.650000</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer class="footer py-4">
+        <div class="container-xl px-5">
+            <span>Copyright &copy; 2019</span>
+        </div>
+    </footer>
+</body>
+</html>
