@@ -14,13 +14,11 @@
     <div class="navigation">
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="index.html">Norman's Profile</a>
-            
             <button class="navbar-toggler border" type="button" 
             data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" 
             aria-expanded="false" aria-label="toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarDropdown">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -42,7 +40,6 @@
             </div>
         </nav>
     </div>
-
     <div class="container-xl clearfix px-3 mt-4">
         <div class="card-content col-4 float-left pr-6", style="width:300px">
             <a>
@@ -67,7 +64,7 @@
                 <p>Data scientist with several years of experience in academic research and data analysis. 
                     Experienced in data management and statistical packages, such as Javascript, Python, R, Stata, MatLab, E-View, SQL, and VBA. 
                     Recently graduated from U.C. Berkeley Data Analytic boot camp for keeping up with the recent technology and best practices. 
-                    Motivated to bring background in academic research and ability to build econometrics models with visualization to enhance decision-making and achieve company goals.
+                    Motivated to bring background in academic research and ability to build econometrics models with visualization to enhance decision-making and achieve company missions.
                 </p>
                 
                 <h2>Education</h2>
@@ -94,24 +91,19 @@
 
                     <dt class="col-sm-4">Others:</dt>
                     <dd class="col-sm-8">Git, Flask, command line</dd>
-
                 </dl>
             </div>
         </div>
     </div>
-
-
     <div class="container-xl px-5">
         <h2>Timeline Visualization</h2>
     </div>
     <div class="container-xl px-5">
         <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
-
         <script type="text/javascript">
             google.charts.load("current", {packages:["timeline"]});
             google.charts.setOnLoadCallback(drawChart);
             function drawChart() {
-
                 var container = document.getElementById('spec');
                 var chart = new google.visualization.Timeline(container);
                 var dataTable = new google.visualization.DataTable();
@@ -127,26 +119,20 @@
                 [ 'Work',   'Hallmark Cards',                    new Date(2006, 2, 10), new Date(2008, 2, 30) ],
                 [ 'Work',   'First Global',                      new Date(2008, 3, 1), new Date(2009, 10, 30) ],
                 [ 'Work',   'EPIK',                              new Date(2010, 1, 20), new Date(2013, 1, 20) ],
-                [ 'Work',   'SFSU, DVC, USF, CCSF, MSU',         new Date(2015, 8, 25), new Date(2019, 12, 01) ],
-                [ 'Work',   'Code with Corgis',                  new Date(2019, 2, 01), new Date(2019, 12, 01) ],
+                [ 'Work',   'SFSU, DVC, USF, CCSF, MSU',         new Date(2015, 8, 25), new Date(2019, 6, 1) ],
+                [ 'Work',   'Code with Corgis',                  new Date(2019, 2, 01), new Date(2019, 6, 1) ],
                 [ 'Country',   'U.S.A.',                         new Date(2000, 8, 25), new Date(2005, 10, 1) ],
                 [ 'Country',   'Hong Kong',                      new Date(2005, 10, 3), new Date(2009, 10, 30) ],
                 [ 'Country',   'South Korea',                    new Date(2010, 1, 20), new Date(2013, 1, 20) ],
-                [ 'Country',   'U.S.A.',                         new Date(2013, 1, 22), new Date(2019, 12, 01) ]]);
-
+                [ 'Country',   'U.S.A.',                         new Date(2013, 1, 22), new Date(2019, 6, 1) ]]);
             var options = {
                 timeline: { colorByRowLabel: true }
             };
-
             chart.draw(dataTable, options);
             }
-
         </script>
-
             <div id="spec" style="height: 200px;"></div>
     </div> 
-
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
