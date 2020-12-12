@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Norman Lo</title>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Norman's Profile</a>
+            
+            <button class="navbar-toggler border" type="button" 
+            data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" 
+            aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href=work.html class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=project.html class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=teach.html class="nav-link">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=contact.html class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>country</th>
+            <th>country_code</th>
+            <th>gdp</th>
+            <th>gdpPerCap</th>
+            <th>gini</th>
+            <th>happiness</th>
+            <th>lat</th>
+            <th>lon</th>
+            <th>population</th>
+            <th>region_id</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>Angola</td>
+            <td>AGO</td>
+            <td>1.030420e+11</td>
+            <td>4105.89</td>
+            <td>42.7</td>
+            <td>3.795</td>
+            <td>-11.202692</td>
+            <td>17.873887</td>
+            <td>25096150.0</td>
+            <td>SSF</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>Albania</td>
+            <td>ALB</td>
+            <td>1.347108e+10</td>
+            <td>4676.32</td>
+            <td>29.0</td>
+            <td>5.004</td>
+            <td>41.153332</td>
+            <td>20.168331</td>
+            <td>2880703.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>Argentina</td>
+            <td>ARG</td>
+            <td>4.475180e+11</td>
+            <td>10411.87</td>
+            <td>42.4</td>
+            <td>5.793</td>
+            <td>-38.416097</td>
+            <td>-63.616672</td>
+            <td>42981515.0</td>
+            <td>LCN</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>Armenia</td>
+            <td>ARM</td>
+            <td>1.150200e+10</td>
+            <td>3957.72</td>
+            <td>32.5</td>
+            <td>5.062</td>
+            <td>40.069099</td>
+            <td>45.038189</td>
+            <td>2906220.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>Australia</td>
+            <td>AUS</td>
+            <td>1.349300e+12</td>
+            <td>56718.69</td>
+            <td>34.7</td>
+            <td>7.177</td>
+            <td>-25.274398</td>
+            <td>133.775136</td>
+            <td>23789338.0</td>
+            <td>EAS</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>Austria</td>
+            <td>AUT</td>
+            <td>4.200400e+11</td>
+            <td>48654.21</td>
+            <td>30.5</td>
+            <td>7.396</td>
+            <td>47.516231</td>
+            <td>14.550072</td>
+            <td>8633169.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>Azerbaijan</td>
+            <td>AZE</td>
+            <td>5.719553e+10</td>
+            <td>5927.40</td>
+            <td>16.6</td>
+            <td>5.168</td>
+            <td>40.143105</td>
+            <td>47.576927</td>
+            <td>9649341.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>Burundi</td>
+            <td>BDI</td>
+            <td>2.297241e+09</td>
+            <td>340.76</td>
+            <td>38.6</td>
+            <td>3.775</td>
+            <td>-3.373056</td>
+            <td>29.918886</td>
+            <td>6741569.0</td>
+            <td>SSF</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>Belgium</td>
+            <td>BEL</td>
+            <td>5.151030e+11</td>
+            <td>45688.67</td>
+            <td>27.7</td>
+            <td>6.892</td>
+            <td>50.503887</td>
+            <td>4.469936</td>
+            <td>11274196.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>Benin</td>
+            <td>BEN</td>
+            <td>9.102277e+09</td>
+            <td>1648.44</td>
+            <td>47.8</td>
+            <td>5.820</td>
+            <td>9.307690</td>
+            <td>2.315834</td>
+            <td>5521763.0</td>
+            <td>SSF</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>Burkina Faso</td>
+            <td>BFA</td>
+            <td>1.238052e+10</td>
+            <td>683.61</td>
+            <td>35.3</td>
+            <td>4.927</td>
+            <td>12.238333</td>
+            <td>-1.561593</td>
+            <td>18110624.0</td>
+            <td>SSF</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>Bangladesh</td>
+            <td>BGD</td>
+            <td>1.677710e+11</td>
+            <td>1077.34</td>
+            <td>32.4</td>
+            <td>4.499</td>
+            <td>23.684994</td>
+            <td>90.356331</td>
+            <td>155727053.0</td>
+            <td>SAS</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>Bulgaria</td>
+            <td>BGR</td>
+            <td>5.679241e+10</td>
+            <td>7912.02</td>
+            <td>37.4</td>
+            <td>5.099</td>
+            <td>42.733883</td>
+            <td>25.485830</td>
+            <td>7177991.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>Bosnia and Herzegovina</td>
+            <td>BIH</td>
+            <td>1.892970e+10</td>
+            <td>5353.48</td>
+            <td>32.7</td>
+            <td>5.887</td>
+            <td>43.915886</td>
+            <td>17.679076</td>
+            <td>3535961.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>Belarus</td>
+            <td>BLR</td>
+            <td>5.918702e+10</td>
+            <td>6237.03</td>
+            <td>27.0</td>
+            <td>5.234</td>
+            <td>53.709807</td>
+            <td>27.953389</td>
+            <td>9489616.0</td>
+            <td>ECS</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>Bolivia</td>
+            <td>BOL</td>
+            <td>2.675834e+10</td>
+            <td>2495.02</td>
+            <td>44.6</td>
+            <td>5.916</td>
+            <td>-16.290154</td>
+            <td>-63.588653</td>
+            <td>10724705.0</td>
+            <td>LCN</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>Brazil</td>
+            <td>BRA</td>
+            <td>2.256910e+12</td>
+            <td>10957.89</td>
+            <td>51.3</td>
+            <td>6.191</td>
+            <td>-14.235004</td>
+            <td>-51.925280</td>
+            <td>205962108.0</td>
+            <td>LCN</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>Bhutan</td>
+            <td>BTN</td>
+            <td>2.234759e+09</td>
+            <td>3253.12</td>
+            <td>38.8</td>
+            <td>5.082</td>
+            <td>27.514162</td>
+            <td>90.433601</td>
+            <td>686958.0</td>
+            <td>SAS</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>Botswana</td>
+            <td>BWA</td>
+            <td>1.684329e+10</td>
+            <td>8359.51</td>
+            <td>60.5</td>
+            <td>3.461</td>
+            <td>-22.328474</td>
+            <td>24.684866</td>
+            <td>2014866.0</td>
+            <td>SSF</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>Central African Republic</td>
+            <td>CAF</td>
+            <td>1.496562e+09</td>
+            <td>331.44</td>
+            <td>56.2</td>
+            <td>3.476</td>
+            <td>6.611111</td>
+            <td>20.939444</td>
+            <td>4515392.0</td>
+            <td>SSF</td>
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer class="footer py-4">
+        <div class="container-xl px-5">
+            <span>Copyright &copy; 2019</span>
+        </div>
+    </footer>
+</body>
+</html>

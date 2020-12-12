@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="static/css/style.css">
+    <title>Norman Lo</title>
+</head>
+<body>
+    <div class="navigation">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">Norman's Profile</a>
+            
+            <button class="navbar-toggler border" type="button" 
+            data-toggle="collapse" data-target="#navbarDropdown" aria-controls="navbarDropdown" 
+            aria-expanded="false" aria-label="toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarDropdown">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a href=work.html class="nav-link">Work Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=project.html class="nav-link">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=teach.html class="nav-link">Teaching</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href=contact.html class="nav-link">Contact Me</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+      <table border="1" class="dataframe">
+        <thead>
+          <tr style="text-align: right;">
+            <th></th>
+            <th>id</th>
+            <th>School</th>
+            <th>Gender</th>
+            <th>Race</th>
+            <th>Local</th>
+            <th>Full Time</th>
+            <th>Future</th>
+            <th>Effectiveness</th>
+            <th>Online Supplement</th>
+            <th>Supplement Use</th>
+            <th>Feet</th>
+            <th>Inches</th>
+            <th>Weight</th>
+            <th>Exercise per Week</th>
+            <th>Exercise Time</th>
+            <th>Read Label</th>
+            <th>Taste</th>
+            <th>Price</th>
+            <th>Nutrition</th>
+            <th>Presentation</th>
+            <th>Appearance</th>
+            <th>Health</th>
+            <th>Parents Overweight</th>
+            <th>Final</th>
+            <th>Attend</th>
+            <th>Year</th>
+            <th>Semester</th>
+            <th>Class</th>
+            <th>Platform</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>0</th>
+            <td>68968</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>9</td>
+            <td>150</td>
+            <td>2 to 4 days a week</td>
+            <td>20 - 30 minutes</td>
+            <td>Sometime</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.812520</td>
+            <td>0.791667</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>1</th>
+            <td>46998</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Somewhat helpful</td>
+            <td>Not too difficult</td>
+            <td>5</td>
+            <td>4</td>
+            <td>160</td>
+            <td>2 to 4 days a week</td>
+            <td>30 - 40 minutes</td>
+            <td>Sometime</td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Not sure</td>
+            <td>0.640884</td>
+            <td>1.000000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>2</th>
+            <td>79024</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>African American</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>9</td>
+            <td>150</td>
+            <td>I don't regularly exercise</td>
+            <td>Over an hour</td>
+            <td>Not too often</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.681216</td>
+            <td>1.000000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>3</th>
+            <td>85016</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Not too helpful</td>
+            <td>Not too effective</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>11</td>
+            <td>180</td>
+            <td>Once a week</td>
+            <td>30 - 40 minutes</td>
+            <td>Often</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.501591</td>
+            <td>0.920000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>4</th>
+            <td>36853</td>
+            <td>San Francisco State University</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Not too helpful</td>
+            <td>Not too effective</td>
+            <td>Very helpful</td>
+            <td>No problem at all</td>
+            <td>4</td>
+            <td>10</td>
+            <td>105</td>
+            <td>2 to 4 days a week</td>
+            <td>Over an hour</td>
+            <td>Not too often</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.692273</td>
+            <td>0.789474</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>LaunchPad</td>
+          </tr>
+          <tr>
+            <th>5</th>
+            <td>65795</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>Not too difficult</td>
+            <td>6</td>
+            <td>10</td>
+            <td>130</td>
+            <td>2 to 4 days a week</td>
+            <td>Over an hour</td>
+            <td>Sometime</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.896591</td>
+            <td>0.923077</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>6</th>
+            <td>47654</td>
+            <td>San Francisco State University</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Very effective</td>
+            <td>Somewhat helpful</td>
+            <td>Not too difficult</td>
+            <td>5</td>
+            <td>11</td>
+            <td>157</td>
+            <td>Once a week</td>
+            <td>20 - 30 minutes</td>
+            <td>Sometime</td>
+            <td>2</td>
+            <td>4</td>
+            <td>1</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.903409</td>
+            <td>0.605263</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>LaunchPad</td>
+          </tr>
+          <tr>
+            <th>7</th>
+            <td>20273</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Somewhat helpful</td>
+            <td>Not too difficult</td>
+            <td>5</td>
+            <td>8</td>
+            <td>138</td>
+            <td>I don't regularly exercise</td>
+            <td>30 - 40 minutes</td>
+            <td>Not too often</td>
+            <td>2</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.524091</td>
+            <td>0.720000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>8</th>
+            <td>58160</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Somewhat helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>4</td>
+            <td>110</td>
+            <td>Once a week</td>
+            <td>20 - 30 minutes</td>
+            <td>Not too often</td>
+            <td>1</td>
+            <td>2</td>
+            <td>4</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.932606</td>
+            <td>0.791667</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>9</th>
+            <td>36036</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Somewhat effective</td>
+            <td>Very helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>8</td>
+            <td>125</td>
+            <td>Once a week</td>
+            <td>40 - 50 minutes</td>
+            <td>Sometime</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Not sure</td>
+            <td>0.707022</td>
+            <td>0.750000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>10</th>
+            <td>27781</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>4</td>
+            <td>134</td>
+            <td>2 to 4 days a week</td>
+            <td>10 - 20 minutes</td>
+            <td>Always</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.777934</td>
+            <td>0.791667</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>11</th>
+            <td>94353</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>9</td>
+            <td>130</td>
+            <td>Once a week</td>
+            <td>30 - 40 minutes</td>
+            <td>Sometime</td>
+            <td>4</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.827273</td>
+            <td>0.560000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>12</th>
+            <td>67021</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>Very difficult</td>
+            <td>5</td>
+            <td>7</td>
+            <td>110</td>
+            <td>Once a week</td>
+            <td>30 - 40 minutes</td>
+            <td>Always</td>
+            <td>1</td>
+            <td>4</td>
+            <td>2</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.834493</td>
+            <td>0.666667</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>13</th>
+            <td>21174</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Very helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>5</td>
+            <td>120</td>
+            <td>2 to 4 days a week</td>
+            <td>40 - 50 minutes</td>
+            <td>Sometime</td>
+            <td>2</td>
+            <td>3</td>
+            <td>1</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.860455</td>
+            <td>0.960000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>14</th>
+            <td>50901</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>White</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>Somewhat difficult</td>
+            <td>5</td>
+            <td>10</td>
+            <td>184</td>
+            <td>5 to 7 days a week</td>
+            <td>40 - 50 minutes</td>
+            <td>Often</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Not sure</td>
+            <td>0.605623</td>
+            <td>0.875000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>15</th>
+            <td>53604</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>9</td>
+            <td>181</td>
+            <td>2 to 4 days a week</td>
+            <td>Over an hour</td>
+            <td>Always</td>
+            <td>1</td>
+            <td>3</td>
+            <td>2</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.718987</td>
+            <td>0.875000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>101</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>16</th>
+            <td>15752</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>Local Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Somewhat helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>2</td>
+            <td>126</td>
+            <td>I don't regularly exercise</td>
+            <td>20 - 30 minutes</td>
+            <td>Not too often</td>
+            <td>4</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>0.756591</td>
+            <td>0.961538</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>17</th>
+            <td>74776</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Somewhat helpful</td>
+            <td>Somewhat effective</td>
+            <td>Very helpful</td>
+            <td>Not too difficult</td>
+            <td>5</td>
+            <td>8</td>
+            <td>119</td>
+            <td>Once a week</td>
+            <td>Over an hour</td>
+            <td>Never</td>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>No</td>
+            <td>0.831591</td>
+            <td>0.538462</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>18</th>
+            <td>70379</td>
+            <td>Diablo Valley College</td>
+            <td>Female</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Very effective</td>
+            <td>Very helpful</td>
+            <td>No problem at all</td>
+            <td>5</td>
+            <td>4</td>
+            <td>135</td>
+            <td>2 to 4 days a week</td>
+            <td>40 - 50 minutes</td>
+            <td>Often</td>
+            <td>3</td>
+            <td>2</td>
+            <td>1</td>
+            <td>4</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.925682</td>
+            <td>1.000000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+          <tr>
+            <th>19</th>
+            <td>57716</td>
+            <td>Diablo Valley College</td>
+            <td>Male</td>
+            <td>Asian</td>
+            <td>International Student</td>
+            <td>Full time</td>
+            <td>Very helpful</td>
+            <td>Somewhat effective</td>
+            <td>Very helpful</td>
+            <td>Not too difficult</td>
+            <td>5</td>
+            <td>0</td>
+            <td>171</td>
+            <td>Once a week</td>
+            <td>30 - 40 minutes</td>
+            <td>Not too often</td>
+            <td>1</td>
+            <td>3</td>
+            <td>4</td>
+            <td>2</td>
+            <td>Yes</td>
+            <td>Yes</td>
+            <td>No</td>
+            <td>0.873409</td>
+            <td>1.000000</td>
+            <td>2016</td>
+            <td>Spring</td>
+            <td>102</td>
+            <td>Aplia</td>
+          </tr>
+        </tbody>
+      </table>      
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <footer class="footer py-4">
+        <div class="container-xl px-5">
+            <span>Copyright &copy; 2019</span>
+        </div>
+    </footer>
+</body>
+</html>
